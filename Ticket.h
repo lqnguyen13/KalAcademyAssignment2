@@ -5,9 +5,11 @@ namespace AirlineReservationSystem {
 	class Ticket
 	{
 	private:
+		int mPassengerID;
 		int mFlightNum;
-		std::string mPassFirstName;
-		std::string mPassLastName;
+		std::string mFlightDate;
+		std::string mSeat;
+
 
 	public:
 		// TODO: WRITE SETTERS/GETTERS AND METHODS IN HEADER FILE
