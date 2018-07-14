@@ -5,6 +5,7 @@ namespace AirlineReservationSystem {
 	class Ticket
 	{
 	private:
+		int mTicketNum;
 		int mPassengerID;
 		int mFlightNum;
 		std::string mFlightDate;

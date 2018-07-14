@@ -150,6 +150,7 @@
     <ClInclude Include="Flight.h" />
     <ClInclude Include="FlightDatabase.h" />
     <ClInclude Include="Passenger.h" />
+    <ClInclude Include="PassengerDatabase.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Ticket.h" />
@@ -160,6 +161,7 @@
     <ClCompile Include="Flight.cpp" />
     <ClCompile Include="FlightDatabase.cpp" />
     <ClCompile Include="Passenger.cpp" />
+    <ClCompile Include="PassengerDatabase.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
