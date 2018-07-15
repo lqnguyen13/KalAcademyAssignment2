@@ -9,7 +9,9 @@ namespace AirlineReservationSystem {
 		std::vector<Flight> mFlights;
 
 	public:
-		// TODO: WRITE SETTERS/GETTERS AND METHODS IN HEADER FILE
+		Flight& getFlight(int flightNumber, std::string flightDate);
+
+		void displayAllFlights() const;
 
 	};
 }
