@@ -6,12 +6,14 @@ namespace AirlineReservationSystem {
 	{
 	private:
 		int mFlightNum;
+		std::string mFlightDate;
 		std::string mDepartLoc;
 		std::string mArriveLoc;
 		std::string mDepartTime;
 		std::string mArriveTime;
 		float mFlightDur;
 		int mTotalSeats;
+		int mSeatsReserved;
 		bool mReserved = false;
 	
 public:
@@ -20,9 +22,11 @@ public:
 	Flight() = default;
 	Flight(const std::string& depart,
 		const std::string& arrive,
+		const std::string& date,
 		int flightno);
 
-	void displayFlight() const;
+	void displayFlight();
+	int getAvailableSeats();
 
 	//Getters and setters
 
@@ -31,6 +35,9 @@ public:
 
 	void setFlightno(int flightno);
 	int getFlightno() const;
+
+	void setFlightDate(int flightDate);
+	const std::string& getFlightDate() const;
 
 	void setDepartLoc(const std::string& depart);
 	const std::string& getDepartLoc() const;
@@ -49,5 +56,8 @@ public:
 
 	void setTotalSeat(int noofseat);
 	int getTotalSeat() const;
+
+	void setSeatsReserved(int resSeats);
+	int getSeatsReserved() const;
 	};
 }
