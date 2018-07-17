@@ -8,6 +8,10 @@ namespace AirlineReservationSystem {
 	Passenger::Passenger(const string& firstName, const string& lastName)
 		: mFirstName(firstName), mLastName(lastName) {}
 
+	Passenger::Passenger(const string& firstName, const string& lastName,
+		const string& phoneNumber, const string& email) : mFirstName(firstName),
+		mLastName(lastName), mPhoneNumber(phoneNumber), mEmail(email) {}
+
 	void Passenger::setFirstName(const string& firstName) {
 		mFirstName = firstName;
 	}
@@ -46,6 +50,18 @@ namespace AirlineReservationSystem {
 
 	int Passenger::getPassengerID() const {
 		return mPassengerID;
+	}
+
+	void Passenger::addPassenger() {
+		mAdded = true;
+	}
+
+	void Passenger::removePassenger() {
+		mAdded = false;
+	}
+
+	bool Passenger::isAdded() const {
+		return mAdded;
 	}
 
 	void Passenger::display() const {
