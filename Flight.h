@@ -9,7 +9,6 @@ namespace AirlineReservationSystem {
 		std::string mFlightDate;
 		std::string mDepartLoc;
 		std::string mArriveLoc;
-		std::string mFlightDate;
 		std::string mDepartTime;
 		std::string mArriveTime;
 		float mFlightDur;
