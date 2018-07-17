@@ -2,16 +2,13 @@
 #include "Flight.h"
 #include <iostream>
 
-
 using namespace std;
 
 namespace AirlineReservationSystem {
 
 	Flight::Flight(const string& depart, const string& arrive, const int flightno)
-		: mDepartLoc(depart), mArriveLoc(arrive) , mFlightNum(flightno) {}
+		: mDepartLoc(depart), mArriveLoc(arrive), mFlightNum(flightno) {}
 
-	
-	
 	void Flight::setDepartLoc(const string& depart) {
 		mDepartLoc = depart;
 	}
@@ -60,14 +57,14 @@ namespace AirlineReservationSystem {
 
 	void Flight::setTotalSeat(int noofseat)
 	{
-		mTotalSeats = noofseat
+		mTotalSeats = noofseat;
 	}
 
 	int Flight::getTotalSeat() const
 	{
 		return mTotalSeats;
 	}
-	
+
 
 	bool Flight::isReserved() const
 	{
@@ -78,20 +75,14 @@ namespace AirlineReservationSystem {
 		mFlightNum = flightno;
 	}
 
-	int Flight::getFlightno() const{
+	int Flight::getFlightno() const {
 		return mFlightNum;
-
-
-		void Flight::displayFlight() const {
-			cout << "FlightNo: " << getFlightno() << endl;
-			cout << "Arrival Loc:  " << getArriveLoc() << endl;
-			cout << "Depart Loc: " << getDepartLoc() << endl;
-			cout << "-------------------------" << endl;
-		}
-
-	
-
-	
 	}
 
+	void Flight::displayFlight() const {
+		cout << "FlightNo: " << getFlightno() << endl;
+		cout << "Arrival Loc:  " << getArriveLoc() << endl;
+		cout << "Depart Loc: " << getDepartLoc() << endl;
+		cout << "-------------------------" << endl;
+	}
 }
